@@ -2,21 +2,22 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Solution {
-    public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        int N = Integer.parseInt(bufferedReader.readLine().trim());
+public class Task1 {
 
-        if (N % 2 != 0) {
+    public static void main(String[] args) throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        int number = Integer.parseInt(reader.readLine().trim());
+
+        if (number % 2 != 0) {
             System.out.println("Weird");
-        } else if (N <= 5) {
+        } else if (number <= 5) {
             System.out.println("Not Weird");
-        } else if (N <= 20) {
+        } else if (number <= 20) {
             System.out.println("Weird");
         } else {
             System.out.println("Not Weird");
         }
 
-        bufferedReader.close();
+        reader.close();
     }
 }
